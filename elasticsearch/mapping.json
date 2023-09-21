@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "imageVector": {
+      "type": "dense_vector",
+      "dims": 1024,
+      "index": true,
+      "similarity": "dot_product"
+    },
+    "descriptionVector": {
+      "type": "dense_vector",
+      "dims": 1024,
+      "index": true,
+      "similarity": "dot_product"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

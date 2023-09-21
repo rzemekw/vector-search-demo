@@ -1,0 +1,2 @@
+curl -X PUT -H 'Content-Type: application/json' --data-binary '@./index.json' http://localhost:9200/products
+curl -X PUT -H 'Content-Type: application/json' --data-binary '@./mapping.json' http://localhost:9200/products/_mapping
