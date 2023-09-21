@@ -1,0 +1,13 @@
+<form (ngSubmit)="onSubmit()" class="product-form">
+    <input type="file" id="imageInput" style="display: none;" accept="image/*">
+
+    <img (click)="onImageClick()" [src]="src" id="clickableImage" alt="Click to change" style="cursor: pointer;">
+
+    <div class="textarea-wrapper wrapper">
+        <textarea [(ngModel)]="description" [ngModelOptions]="{standalone: true}"></textarea>
+    </div>
+
+    <div class="wrapper button-wrapper">
+        <button type="submit" mat-button mat-stroked-button color="accent">Save</button>
+    </div>
+</form>

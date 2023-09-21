@@ -1,0 +1,20 @@
+.products-view {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.search-container {
+  display: flex;
+  flex-direction: row;
+
+  mat-form-field {
+    flex-grow: 1;
+    margin-bottom: -20px;
+  }
+
+  button {
+    margin-left: 20px;
+    height: auto;
+    padding: 0 30px;
+  }
+}

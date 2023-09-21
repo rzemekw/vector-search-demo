@@ -1,0 +1,11 @@
+<div class="products-view">
+    <form class="search-container">
+        <mat-form-field>
+            <input matInput [(ngModel)]="text" [ngModelOptions]="{standalone: true}">
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" (click)="search()">Search</button>
+    </form>
+
+    <app-product-list [products]="products"/>
+</div>

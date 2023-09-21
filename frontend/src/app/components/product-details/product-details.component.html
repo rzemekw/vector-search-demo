@@ -1,0 +1,15 @@
+<div class="product-details">
+    <div class="image-wrapper wrapper">
+        <img [src]="src">
+    </div>
+
+    <div class="description wrapper">
+        {{description}}
+    </div>
+
+    <div class="wrapper button-wrapper">
+        <button (click)="editClicked()" mat-button mat-stroked-button color="primary">Edit</button>
+    </div>
+
+    <app-product-list [products]="relatedProducts"></app-product-list>
+</div>

@@ -1,0 +1,14 @@
+.product-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+app-product-item {
+  margin: 10px;
+
+  width: 340px;
+  height: 440px;
+}

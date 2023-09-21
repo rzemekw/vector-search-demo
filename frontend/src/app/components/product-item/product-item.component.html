@@ -1,0 +1,9 @@
+<mat-card [routerLink]="'/products/' + product.id" class="product-item">
+    <div class="image-wrapper wrapper">
+        <img [src]="src">
+    </div>
+
+    <div class="description wrapper">
+        {{product.description}}
+    </div>
+</mat-card>

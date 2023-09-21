@@ -1,0 +1,1 @@
+export const DEFAULT_SRC = "/assets/image-placeholder.png";

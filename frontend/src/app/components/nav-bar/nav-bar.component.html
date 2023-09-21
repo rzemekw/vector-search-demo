@@ -1,0 +1,15 @@
+<div class="nav-bar">
+    <h1 routerLink="/">HOME</h1>
+    <div class="options">
+        <h3 routerLink="/">Products</h3>
+        <h3 routerLink="/create-product">New Product</h3>
+    </div>
+    <mat-form-field>
+        <mat-label>Search type</mat-label>
+        <mat-select [(ngModel)]="selectedSearchType" (selectionChange)="searchTypeChanged($event)">
+            <mat-option [value]="searchType.DEFAULT">Default</mat-option>
+            <mat-option [value]="searchType.IMAGE">Image only</mat-option>
+            <mat-option [value]="searchType.TEXT">Text only</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
