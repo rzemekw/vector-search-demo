@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/vector_search_demo
+    username: vector_search_demo_admin
+    password: PostgresPassword123!
+    driver-class-name: org.postgresql.Driver
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 12MB
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        temp:
+          use_jdbc_metadata_defaults: false
+
+elasticsearch:
+  url: http://localhost:9200
+
+server:
+  servlet:
+    context-path: /api
+
+apps:
+  vectorisationApp:
+    url: http://localhost:8000
+
